@@ -1,0 +1,11 @@
+C:\Users\wwalker\Documents\Visual Studio 2015\Projects\BoldchatEncryption\bin\Debug\BoldchatEncryption.dll
+C:\Users\wwalker\Documents\Visual Studio 2015\Projects\BoldchatEncryption\bin\Debug\BoldchatEncryption.pdb
+C:\Users\wwalker\Documents\Visual Studio 2015\Projects\BoldchatEncryption\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\wwalker\Documents\Visual Studio 2015\Projects\BoldchatEncryption\obj\Debug\BoldchatEncryption.dll
+C:\Users\wwalker\Documents\Visual Studio 2015\Projects\BoldchatEncryption\obj\Debug\BoldchatEncryption.pdb
+C:\Users\wwalker\Documents\Visual Studio 2015\Projects\BoldchatEncryption\obj\Debug\BoldchatEncryption.csprojResolveAssemblyReference.cache
+C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\bin\Debug\BoldchatEncryption.dll
+C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\bin\Debug\BoldchatEncryption.pdb
+C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.csprojResolveAssemblyReference.cache
+C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.dll
+C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.pdb
