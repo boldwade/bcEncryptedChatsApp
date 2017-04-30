@@ -9,3 +9,7 @@ C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\Bold
 C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.csprojResolveAssemblyReference.cache
 C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.dll
 C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.pdb
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\BoldchatEncryption\bin\Debug\BoldchatEncryption.dll
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\BoldchatEncryption\bin\Debug\BoldchatEncryption.pdb
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.dll
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\BoldchatEncryption\obj\Debug\BoldchatEncryption.pdb

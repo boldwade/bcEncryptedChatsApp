@@ -24,3 +24,11 @@ C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\Encr
 C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\EncryptionConsole\bin\Debug\BoldchatEncryption.dll
 C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\EncryptionConsole\bin\Debug\BoldchatEncryption.pdb
 C:\Users\walker_shared\Google Drive\Users\All\Downloads\projects\Encryption\EncryptionConsole\obj\Debug\EncryptionConsoleProject.csprojResolveAssemblyReference.cache
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\bin\Debug\Encryption.exe.config
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\bin\Debug\Encryption.exe
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\bin\Debug\Encryption.pdb
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\bin\Debug\BoldchatEncryption.dll
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\bin\Debug\BoldchatEncryption.pdb
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\obj\Debug\EncryptionConsoleProject.csprojResolveAssemblyReference.cache
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\obj\Debug\Encryption.exe
+C:\Users\walker_shared\Google Drive\Users\All\projects\Encryption\EncryptionConsole\obj\Debug\Encryption.pdb
