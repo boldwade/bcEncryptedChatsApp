@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace Encryption {
     internal static class Sha512Util {

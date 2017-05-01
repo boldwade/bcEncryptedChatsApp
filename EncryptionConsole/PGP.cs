@@ -14,7 +14,7 @@ namespace Encryption {
 
             var pgpUtil = new BoldchatEncryption.PgpUtil(publicEncryptionKey, privateSigningKey, "12345".ToCharArray());
 
-            var unixTimestamp = ((int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds + (60 * 60 * 24)) + "000";
+            var unixTimestamp = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds + (60 * 60 * 24) + "000";
             var commonParms = "VisitorKey=&Expiration=&URL=&ReferrerURL=&VisitRef=&VisitName=&VisitInfo=&VisitEmail=&VisitPhone=&InitialQuestion=&CustomURL=&customField_tag=&customField_text2=&customField_dropDownMenu=";
 
             var visitParms = "Type=visit&" + GetParameters(commonParms, "visit", unixTimestamp);

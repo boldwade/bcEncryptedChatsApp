@@ -1,6 +1,5 @@
 ﻿using System.Net.Http.Headers;
 using System.Web.Http;
-using WebApiContrib.Formatting.Jsonp;
 
 namespace WebAPIForBoldchat
 {
@@ -23,6 +22,7 @@ namespace WebAPIForBoldchat
             );
 
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
         }
     }
 }
