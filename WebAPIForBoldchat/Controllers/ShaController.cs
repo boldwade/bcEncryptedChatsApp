@@ -10,10 +10,10 @@ namespace WebAPIForBoldchat.Controllers {
         public HttpResponseMessage Post([FromBody]JToken data) {
             if (data != null && data.HasValues) {
                 var hashKey = ((JValue)data["hashKey"])?.Value;
-                var input = ((JValue)data["input"])?.Value;
+                var secureParameters = ((JValue)data["secureParameters"])?.Value;
 
-                if (hashKey != null && input != null) {
-                    return Request.CreateResponse(HttpStatusCode.OK, new BoldchatEncryption.Sha512Util(hashKey.ToString()).GetEncryptedString(input.ToString()));
+                if (hashKey != null && secureParameters != null) {
+                    return Request.CreateResponse(HttpStatusCode.OK, new BoldchatEncryption.Sha512Util(hashKey.ToString()).GetEncryptedString(secureParameters.ToString()));
                 }
             }   
 

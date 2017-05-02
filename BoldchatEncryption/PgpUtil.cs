@@ -35,9 +35,9 @@ namespace BoldchatEncryption {
         private byte[] GetEncryptedData(byte[] data) {
             var baos = new MemoryStream();
             Stream o = new ArmoredOutputStream(baos);
+
             PgpPublicKey publicKey = null;
-            var inputStream =
-                PgpUtilities.GetDecoderStream(new MemoryStream(_encryptionKey));
+            var inputStream = PgpUtilities.GetDecoderStream(new MemoryStream(_encryptionKey));
             var pgpPub = new PgpPublicKeyRingBundle(inputStream);
             for (var i = pgpPub.GetKeyRings().GetEnumerator(); i.MoveNext();) {
                 var pgpPublicKeyRing = (PgpPublicKeyRing)i.Current;
@@ -51,9 +51,8 @@ namespace BoldchatEncryption {
                     }
             }
             if (publicKey == null) throw new Exception("Can't find encryption key in key ring.");
-            var pgpSec =
-                new PgpSecretKeyRingBundle(
-                    PgpUtilities.GetDecoderStream(new MemoryStream(_signingKey)));
+
+            var pgpSec = new PgpSecretKeyRingBundle(PgpUtilities.GetDecoderStream(new MemoryStream(_signingKey)));
             PgpPrivateKey privateKey = null;
             PgpSecretKey secretKey = null;
             for (var i = pgpSec.GetKeyRings().GetEnumerator(); privateKey == null && i.MoveNext();) {

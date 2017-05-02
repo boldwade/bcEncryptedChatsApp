@@ -15,8 +15,7 @@ namespace WebAPIForBoldchat.Controllers {
                 var password = ((JValue)data["password"])?.Value;
                 var secureParameters = ((JValue)data["secureParameters"])?.Value;
 
-                if (encryptionKey != null && signingKey != null && secureParameters != null)
-                {
+                if (encryptionKey != null && signingKey != null && secureParameters != null) {
                     var pgpUtil = new BoldchatEncryption.PgpUtil(
                         Encoding.UTF8.GetBytes(encryptionKey.ToString()),
                         Encoding.UTF8.GetBytes(signingKey.ToString()),
