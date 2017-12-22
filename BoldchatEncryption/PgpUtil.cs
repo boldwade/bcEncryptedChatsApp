@@ -28,13 +28,16 @@ namespace BoldchatEncryption {
             _password = password;
         }
 
-        public string GetEncryptedString(string input) {
-            return Encoding.UTF8.GetString(GetEncryptedData(Encoding.UTF8.GetBytes(input)));
+        public string GetEncryptedString(string input)
+        {
+            var byteInput = Encoding.UTF8.GetBytes(input);
+            var encryptedData = GetEncryptedData(byteInput);
+            return Encoding.UTF8.GetString(encryptedData);
         }
 
         private byte[] GetEncryptedData(byte[] data) {
             var baos = new MemoryStream();
-            Stream o = new ArmoredOutputStream(baos);
+            var outStr = new ArmoredOutputStream(baos);
 
             PgpPublicKey publicKey = null;
             var inputStream = PgpUtilities.GetDecoderStream(new MemoryStream(_encryptionKey));
@@ -91,11 +94,11 @@ namespace BoldchatEncryption {
                 new PgpEncryptedDataGenerator(SymmetricKeyAlgorithmTag.Aes256, true,
                     new SecureRandom());
             encryptedDataGenerator.AddMethod(publicKey);
-            var encryptedOut = encryptedDataGenerator.Open(o, compressedData.Length);
+            var encryptedOut = encryptedDataGenerator.Open(outStr, compressedData.Length);
             encryptedOut.Write(compressedData, 0, compressedData.Length);
             encryptedOut.Close();
             encryptedDataGenerator.Close();
-            o.Close();
+            outStr.Close();
             return baos.ToArray();
         }
 

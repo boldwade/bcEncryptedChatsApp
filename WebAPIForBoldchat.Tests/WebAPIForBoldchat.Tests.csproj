@@ -102,12 +102,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WebAPIForBoldchat\WebAPIForBoldchat.csproj">
-      <Project>{FC053017-9BD4-440F-9488-284EFBCFB209}</Project>
-      <Name>WebAPIForBoldchat</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

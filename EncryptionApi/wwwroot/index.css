@@ -1,0 +1,55 @@
+﻿body {
+	text-align: center;
+}
+
+textarea {
+	width: 500px;
+	height: 400px;
+}
+
+select {
+	width: 480px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.delete {
+	width: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.delete.disabled {
+	cursor: not-allowed;
+}
+
+input {
+	width: 500px;
+}
+
+input.submit {
+	font-weight: bold;
+	height: 45px;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	padding-bottom: 20px;
+	font-size: x-large;
+}
+
+td {
+	vertical-align: top;
+	text-align: center;
+}
+
+td.pgp {
+	border-right: solid 1px black;
+}
+
+textarea.result {
+	outline: solid 2px black;
+}

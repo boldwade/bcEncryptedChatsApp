@@ -1,15 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIForBoldchat", "WebAPIForBoldchat\WebAPIForBoldchat.csproj", "{FC053017-9BD4-440F-9488-284EFBCFB209}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptionApi", "EncryptionApi\EncryptionApi.csproj", "{95749393-DF01-4377-BD17-77057981FB7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIForBoldchat.Tests", "WebAPIForBoldchat.Tests\WebAPIForBoldchat.Tests.csproj", "{D19CF398-7947-4D20-AC97-C81B6D538422}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionConsoleProject", "EncryptionConsole\EncryptionConsoleProject.csproj", "{E208FFAD-70C6-42FA-A9B7-34FDAB2C6F99}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoldchatEncryption", "BoldchatEncryption\BoldchatEncryption.csproj", "{E82F13AA-DEA0-439D-86A3-1B90FCF8824D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoldchatEncryptionUtil", "BoldchatEncryptionUtil\BoldchatEncryptionUtil.csproj", "{5EC7F0B6-1EC0-45B5-8E76-4D03150946F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,24 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FC053017-9BD4-440F-9488-284EFBCFB209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC053017-9BD4-440F-9488-284EFBCFB209}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC053017-9BD4-440F-9488-284EFBCFB209}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC053017-9BD4-440F-9488-284EFBCFB209}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D19CF398-7947-4D20-AC97-C81B6D538422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D19CF398-7947-4D20-AC97-C81B6D538422}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D19CF398-7947-4D20-AC97-C81B6D538422}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D19CF398-7947-4D20-AC97-C81B6D538422}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E208FFAD-70C6-42FA-A9B7-34FDAB2C6F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E208FFAD-70C6-42FA-A9B7-34FDAB2C6F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E208FFAD-70C6-42FA-A9B7-34FDAB2C6F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E208FFAD-70C6-42FA-A9B7-34FDAB2C6F99}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E82F13AA-DEA0-439D-86A3-1B90FCF8824D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E82F13AA-DEA0-439D-86A3-1B90FCF8824D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E82F13AA-DEA0-439D-86A3-1B90FCF8824D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E82F13AA-DEA0-439D-86A3-1B90FCF8824D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95749393-DF01-4377-BD17-77057981FB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95749393-DF01-4377-BD17-77057981FB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95749393-DF01-4377-BD17-77057981FB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95749393-DF01-4377-BD17-77057981FB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC7F0B6-1EC0-45B5-8E76-4D03150946F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC7F0B6-1EC0-45B5-8E76-4D03150946F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC7F0B6-1EC0-45B5-8E76-4D03150946F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC7F0B6-1EC0-45B5-8E76-4D03150946F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5C7736B-494F-459F-89EA-E4A31429C96C}
 	EndGlobalSection
 EndGlobal

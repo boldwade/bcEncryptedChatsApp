@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -26,10 +27,10 @@ namespace BoldchatEncryption
             return hashText + input;
         }
 
-        private static string BytesToHex(byte[] bytes)
+        private static string BytesToHex(IReadOnlyList<byte> bytes)
         {
-            var hexChars = new char[bytes.Length * 2];
-            for (var j = 0; j < bytes.Length; j++)
+            var hexChars = new char[bytes.Count * 2];
+            for (var j = 0; j < bytes.Count; j++)
             {
                 var v = bytes[j] & 0xFF;
                 hexChars[j * 2] = HexArray[v >> 4];
@@ -37,25 +38,5 @@ namespace BoldchatEncryption
             }
             return new string(hexChars);
         }
-
-        //private static string EncodeUrl(string url)
-        //{
-        //    var encodedUrl = HttpUtility.UrlEncode(url, Encoding.UTF8);
-        //    return UpperCaseEncodedUrl(encodedUrl);
-        //}
-
-        //private static string UpperCaseEncodedUrl(string encodedUrl)
-        //{
-        //    var temp = encodedUrl.ToCharArray();
-        //    for (var i = 0; i < temp.Length - 2; i++)
-        //    {
-        //        if (temp[i] == '%')
-        //        {
-        //            temp[i + 1] = char.ToUpper(temp[i + 1]);
-        //            temp[i + 2] = char.ToUpper(temp[i + 2]);
-        //        }
-        //    }
-        //    return new string(temp);
-        //}
     }
 }

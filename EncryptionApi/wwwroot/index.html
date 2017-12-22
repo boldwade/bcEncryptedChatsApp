@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test Encrypted Retrieval</title>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Test page for your secure parameters</h2>
+    <table>
+        <tr>
+            <th>PGP</th>
+            <th>SHA512</th>
+        </tr>
+        <tr>
+            <td class="pgp">
+                <select id="pgp_version" onchange="onVersionSelectChange('pgp', this.value);">
+                    <option value="0" selected disabled hidden>Select One...</option>
+                    <option value="1">Create new...</option>
+                </select>
+                <img id="pgp_delete" class="delete" onclick="onDeleteItem('pgp');" src="action_Cancel_16xLG.png" alt="Delete Item"/>
+                <br />
+                <br />
+
+                Name:
+                <br />
+                <input id="pgp_name" />
+                <br />
+                <br />
+
+                Server Public Key (From BC):
+                <br />
+                <textarea id="pgp_publicEncryptionKey"></textarea>
+                <br />
+                <br />
+
+                Your Private Key (From You):
+                <a href="https://www.igolder.com/pgp/generate-key/">Generate Pgp Key</a>
+                <br />
+                <textarea id="pgp_privateSigningKey"></textarea>
+                <br />
+                <br />
+
+                Your Password (Did you use a PW to generate your key?):
+                <br />
+                <input id="pgp_password" />
+                <br />
+                <br />
+
+                Secure Parameters (What do you want to encrypt?):
+                <br />
+                <input id="pgp_secureParameters" />
+                <br />
+                <br />
+
+                <input id="pgp_submit" type="submit" class="submit" value="Get PGP Parameters" onclick="return sendXhrReq('pgp');" />
+
+                <br />
+                <br />
+                <b>Result</b>
+                <br />
+                <textarea class="result" id="pgp_result"></textarea>
+            </td>
+            <td>
+                <select id="sha_version" onchange="onVersionSelectChange('sha', this.value);">
+                    <option value="0" selected disabled hidden>Select One...</option>
+                    <option value="1">Create new...</option>
+                </select>
+                <img id="sha_delete" class="delete" onclick="onDeleteItem('sha');" src="action_Cancel_16xLG.png" alt="Delete Item" />
+                <br />
+                <br />
+
+                Name:
+                <br />
+                <input id="sha_name" />
+                <br />
+                <br />
+
+                Hash Key:
+                <br />
+                <input id="sha_hashKey" />
+                <br />
+                <br />
+
+                Secure Parameters (What do you want to encrypt?):
+                <br />
+                <input id="sha_secureParameters" />
+                <br />
+                <br />
+
+                <input id="sha_submit" type="submit" class="submit" value="Get SHA Parameters" onclick="return sendXhrReq('sha');" />
+                <br />
+                <br />
+                <b>Result</b>
+                <br />
+                <textarea class="result" id="sha_result"></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
